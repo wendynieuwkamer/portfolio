@@ -1,6 +1,96 @@
+CSS
+
+
+/* As RGBa codes */
+
+.rgba-primary-0 { color: rgba( 83,199,155,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(175,240,215,1) }
+.rgba-primary-2 { color: rgba(124,221,184,1) }
+.rgba-primary-3 { color: rgba( 52,175,128,1) }
+.rgba-primary-4 { color: rgba( 25,157,107,1) }
+.rgba-primary-5 { color: rgba( 12,75,50,1) }  /*Darkest, Used for TEXT in Jumbotron*/
+
+/* As RGBa codes */
+
+.rgba-secondary-0 { color: rgba(217, 52,139,1) }	/* Main secondary color */
+.rgba-secondary-1 { color: rgba(253,175,216,1) }
+.rgba-secondary-2 { color: rgba(227, 85,160,1) }
+.rgba-secondary-3 { color: rgba(209, 14,117,1) }
+.rgba-secondary-4 { color: rgba(164,  2, 87,1) }
+.rgba-secondary-5 { color: rgba(255,200,240,1) }    /* Lightest version */
+.rgab-secondary-6 { color: rgba(123,  2, 65,1) }    /*Darkest, used for TEXT in sections*/
+
+
+.text-font { font-family: 'Rubik', sans-serif;}
+.header-font { font-family: 'Lora', serif; }
+
+
+
+/* @group general styles
+body styles, resets, links, headings, other elements
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.navbar{
+	border-bottom: 1px solid rgba( 83,199,155,1);
+	background-color: white;
+}
+
+.icon-bar {
+	background-color: rgba(123,  2, 65,1) ;
+}
 body {
 	width: 100%;
 	margin: 0 0;
+	font-family: 'Rubik', sans-serif;
+	padding-top: 50px;
+	color: rgba(123,  2, 65,1);
+}
+.row {
+	max-width: 1250px;
+	margin: auto;
+}
+section {
+
+	text-align: center;
+	font-size: 18px;
+}
+a {
+	color: rgba(164,  2, 87,1);
+}
+
+
+/* @group helper styles
+forms, notifications and errors, consistent items
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/* @group page structure
+headers, footers, navigation, layout, other page furniture
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+h1 {
+	font-family: 'Lora', serif;
+}
+
+/* @group page components
+individual pages
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/* @group overrides
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+
+
+main .container-fluid {
+	text-align: center;
+	padding: 10px 0;
+/*	min-height: 100vh;*/
+}
+
+main .container-fluid:nth-child(even) {
+	background-color: rgba(124,221,184,1);
+}
+
+main .container-fluid:nth-child(odd) {
+	background-color: rgba(175,240,215,1);
 }
 
 .container {
@@ -10,20 +100,8 @@ body {
 
 .jumbotron {
 	text-align: center;
-}
-
-.main .container-fluid {
-	text-align: center;
-	padding: 10px 0;
-	min-height: 100vh;
-}
-
-.main .container-fluid:nth-child(even) {
-	background-color: rgb(191, 237, 142);
-}
-
-.main .container-fluid:nth-child(odd) {
-	background-color: rgb(233, 156, 255);
+	background-color: rgba(255,200,240,1);
+	color: rgba( 12,75,50,1) ;
 }
 
 .navbar-brand {
